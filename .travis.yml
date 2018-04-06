@@ -7,7 +7,7 @@ sudo: false
 env:
  global:
    - PACKAGE=mirage-xen-minios
-   - EXTRA_REMOTES="git://github.com/mirage/mirage-dev.git"
+   - EXTRA_DEPS="base-bytes"
    - PRE_INSTALL_HOOK="cd /home/opam/opam-repository && git pull origin master && opam update -u -y"
  matrix:
    - DISTRO=debian-stable OCAML_VERSION=4.02.3
