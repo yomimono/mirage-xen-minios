@@ -18,4 +18,4 @@ install: [
 ]
 remove: []
 available: [os = "linux"]
-depends: ["minios-xen"]
+depends: ["minios-xen-pvh" | "minios-xen-pv"]
